@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3C2998D1CCB8E5F00EB9355 /* libGLEW.1.13.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C2998C1CCB8E5F00EB9355 /* libGLEW.1.13.0.dylib */; };
 		F3F77F0F1CC9292000EC35BF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3F77F0E1CC9292000EC35BF /* main.cpp */; };
+		F3F77F161CC929A100EC35BF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F77F151CC929A100EC35BF /* OpenGL.framework */; };
+		F3F77F1A1CC92A7900EC35BF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F77F191CC92A7900EC35BF /* Cocoa.framework */; };
+		F3F77F1C1CC92A8300EC35BF /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F77F1B1CC92A8300EC35BF /* IOKit.framework */; };
+		F3F77F201CC92B7300EC35BF /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F77F1F1CC92B7300EC35BF /* libglfw.3.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F3C2998A1CCB860D00EB9355 /* fractal_fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = fractal_fs.glsl; sourceTree = "<group>"; };
+		F3C2998B1CCB860D00EB9355 /* fractal_vs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = fractal_vs.glsl; sourceTree = "<group>"; };
+		F3C2998C1CCB8E5F00EB9355 /* libGLEW.1.13.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.13.0.dylib; path = ../../../../../opt/local/lib/libGLEW.1.13.0.dylib; sourceTree = "<group>"; };
+		F3C2998E1CCB93F700EB9355 /* red_fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = red_fs.glsl; sourceTree = "<group>"; };
 		F3F77F0B1CC9292000EC35BF /* FractalGLFW */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FractalGLFW; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F77F0E1CC9292000EC35BF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F3F77F151CC929A100EC35BF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F3F77F191CC92A7900EC35BF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F3F77F1B1CC92A8300EC35BF /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		F3F77F1F1CC92B7300EC35BF /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../opt/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
+		F3F77F211CCA7F6500EC35BF /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C2998D1CCB8E5F00EB9355 /* libGLEW.1.13.0.dylib in Frameworks */,
+				F3F77F201CC92B7300EC35BF /* libglfw.3.1.dylib in Frameworks */,
+				F3F77F1C1CC92A8300EC35BF /* IOKit.framework in Frameworks */,
+				F3F77F1A1CC92A7900EC35BF /* Cocoa.framework in Frameworks */,
+				F3F77F161CC929A100EC35BF /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +60,11 @@
 		F3F77F021CC9292000EC35BF = {
 			isa = PBXGroup;
 			children = (
+				F3C2998C1CCB8E5F00EB9355 /* libGLEW.1.13.0.dylib */,
+				F3F77F1F1CC92B7300EC35BF /* libglfw.3.1.dylib */,
+				F3F77F1B1CC92A8300EC35BF /* IOKit.framework */,
+				F3F77F191CC92A7900EC35BF /* Cocoa.framework */,
+				F3F77F151CC929A100EC35BF /* OpenGL.framework */,
 				F3F77F0D1CC9292000EC35BF /* FractalGLFW */,
 				F3F77F0C1CC9292000EC35BF /* Products */,
 			);
@@ -57,7 +81,11 @@
 		F3F77F0D1CC9292000EC35BF /* FractalGLFW */ = {
 			isa = PBXGroup;
 			children = (
+				F3C2998E1CCB93F700EB9355 /* red_fs.glsl */,
+				F3C2998A1CCB860D00EB9355 /* fractal_fs.glsl */,
+				F3C2998B1CCB860D00EB9355 /* fractal_vs.glsl */,
 				F3F77F0E1CC9292000EC35BF /* main.cpp */,
+				F3F77F211CCA7F6500EC35BF /* main.h */,
 			);
 			path = FractalGLFW;
 			sourceTree = "<group>";
@@ -209,6 +237,11 @@
 		F3F77F131CC9292000EC35BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib/,
+					/opt/local/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +249,11 @@
 		F3F77F141CC9292000EC35BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib/,
+					/opt/local/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -239,6 +277,7 @@
 				F3F77F141CC9292000EC35BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
